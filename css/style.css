@@ -13,6 +13,13 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 );
 }
 
+p {
+	font-family: 'Exo 2', sans-serif;
+	text-align: left;
+	color: #fff;
+	line-height: 1.5;
+}
+
 .pricing-tables-jumbotron {
 	text-align: center;
 	background: none;
