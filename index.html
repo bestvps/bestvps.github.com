@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Best VPS Hosting: 2014 Best VPS Hosting Providers</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="http://bestvps.github.io/" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-		<link href="css/exit.css" rel="stylesheet" media="screen">
-	  <script src="js/jquery-2.0.3.min.js"></script>
-   	<script src="js/bootstrap.min.js"></script>
-		<script src="js/exit.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<title>Best VPS Hosting: 2014 Best VPS Hosting Providers</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="http://bestvps.github.io/" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/style.css" rel="stylesheet" media="screen">
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).mousemove(function(e) {
+			$('#exitpopup').css('left', (window.innerWidth/2 - $('#exitpopup').width()/2));
+			$('#exitpopup').css('top', (window.innerHeight/2 - $('#exitpopup').height()/2));
+			if(e.pageY <= 5)
+			{
+				// Show the exit popup
+				$('#exitpopup_bg').fadeIn();
+				$('#exitpopup').fadeIn();
+			}
+		});
+		$('#exitpopup_bg').click(function(){
+			$('#exitpopup_bg').fadeOut();
+			$('#exitpopup').slideUp();
+		});
+	});
+</script>
+
+<style type="text/css">
+	#exitpopup
+	{
+		text-align:center;
+	}
+	#exitpopup h1
+	{
+		margin-top:0px;
+		padding-top:0px;
+	}	
+	#exitpopup p
+	{
+		text-align:left;
+	}
+</style>
 </head>
 <body>
 
