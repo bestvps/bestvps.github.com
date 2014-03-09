@@ -11,34 +11,38 @@
 <link href='http://fonts.googleapis.com/css?family=Exo+2:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="css/style.css" rel="stylesheet" media="screen">
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript">
+var oldPosition = -1;
+$(document).ready(function() {
 
-	$(document).ready(function() {
-	
-		$(document).mousemove(function(e) {
-		
-			$('#exitpopup').css('left', (window.innerWidth/2 - $('#exitpopup').width()/2));
-			$('#exitpopup').css('top', (window.innerHeight/2 - $('#exitpopup').height()/2));
-		
-			if(e.pageY <= 5)
-			{
-				
-				// Show the exit popup
-				$('#exitpopup_bg').fadeIn();
-				$('#exitpopup').fadeIn();
-			}
-		
-		});
-		
-		$('#exitpopup_bg').click(function(){
-			$('#exitpopup_bg').fadeOut();
-			$('#exitpopup').slideUp();
-		});
-	
-	});
+$(document).mousemove(function(e) {
+
+$('#exitpopup').css('left', (window.innerWidth/2 – $('#exitpopup').width()/2));
+$('#exitpopup').css('top', (window.innerHeight/2 – $('#exitpopup').height()/2));
+
+var position = e.pageY – $(window).scrollTop();
+if(position < 10){
+if(oldPosition != -1){
+if(position < oldPosition){
+// Show the exit popup
+$('#exitpopup_bg').fadeIn();
+$('#exitpopup').fadeIn();
+}
+oldPosition = position;
+}else{
+oldPosition = position;
+}
+}
+$('#divData').html(oldPosition + " : " + position);
+
+});
+
+$('#exitpopup_bg').click(function(){
+$('#exitpopup_bg').fadeOut();
+$('#exitpopup').slideUp();
+});
+
+});
 </script>
 
 <style type="text/css">
@@ -366,8 +370,10 @@ it is up to each website owner to plan the extent to which they expect to grow, 
 		<h1>Wait!!! Before you go...</h1>
 		<p>hello</p>
 <a href="#"><img src="http://tonylea.com/go/examples/jquery-exit-popup/letmeinnow.png" style="width:568px; height:190px" border="0" style="border:0px; margin:0px auto;" /></a>
-
 </div>
-		
+
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
