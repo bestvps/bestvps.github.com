@@ -20,6 +20,19 @@ p {
 	line-height: 1.5;
 }
 
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a.website {
+    color: #CF3735;
+    text-decoration: none;
+}
+
 .pricing-tables-jumbotron {
 	text-align: center;
 	background: none;
