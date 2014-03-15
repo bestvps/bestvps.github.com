@@ -1,14 +1,7 @@
 body {
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Exo 2', 'Open Sans', sans-serif;
     font-weight: 300;
-}
-
-p.text   {
-	  margin-top: 30px;
-    font-size: 22px;
-    color: #888;
-    line-height: 36px;
 }
 
 strong { font-weight: 600; }
@@ -88,7 +81,7 @@ nav a:focus { color: #fff; }
 
 .top-content {
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     color: #fff;
 }
 
@@ -170,7 +163,7 @@ nav a:focus { color: #fff; }
 	top: -30px;
 	left: 0;
 	width: 100px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Exo 2', 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 }
@@ -271,6 +264,12 @@ nav a:focus { color: #fff; }
 	padding: 0 120px;
     font-size: 22px;
     line-height: 36px;
+}
+
+p.text {
+    font-size: 16px;
+    line-height: 20px;
+		text-align: left;
 }
 
 .single-feature-img {

@@ -20,6 +20,13 @@ p {
 	line-height: 1.5;
 }
 
+p.text {
+	font-family: 'Exo 2', sans-serif;
+	text-align: left;
+	color: #fff;
+	line-height: 1.5;
+}
+
 a.website {
     color: #CF3735;
     text-decoration: none;
